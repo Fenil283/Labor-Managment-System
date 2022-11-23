@@ -1,4 +1,4 @@
-#Labor-Managment-System
+# Labor-Managment-System
 
 ########### Author ############# Group6-S10-T10
 
