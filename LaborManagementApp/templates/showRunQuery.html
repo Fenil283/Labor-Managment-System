@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<html lang = en>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/Run_Query.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Poppins:wght@800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Lato:ital,wght@1,700&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <title>Run Custom Query</title>
+    <body>
+        <left>
+            <a href="{% url 'index' %}">
+                <button>Go Back</button>
+            </a>
+        </left>
+        <div class="container">
+        
+            
+
+
+        <div class="container py">
+            <h1 class="text-center">Run Custom Query </h1>
+        </br>
+            <form method="post" action="/RunQuery">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"> Enter Your Query Here : </span>
+
+                    <input name="query" id="query" type="text" class="form-control" placeholder="Query" required>
+                </div>
+            </br>
+                <center><button class="btn btn-primary mb-5" type="submit">Submit</button></center>
+            </form>
+        </div>
+    </body>
+</html>

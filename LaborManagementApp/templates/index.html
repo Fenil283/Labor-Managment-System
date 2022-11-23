@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+  <head>
+    <style>
+      .sidebar-nav {
+        margin-top: 20px;
+        padding: 0;
+        list-style: none;
+    }
+
+    body {
+        background-color: #f28d11;
+
+    }
+
+    .Body-Text {
+        color: #54BAB9;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 12pt;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+        text-align: left;
+        line-height: 1.5;
+        margin: 4%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .gradient-custom-2 {
+        /* fallback for old browsers */
+        background: #5089C6;
+        
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, #541690, #FF4949, #FF8D29, #FFCD38);
+        
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, #541690, #FF4949, #FF8D29, #FFCD38);
+        }
+        
+        @media (min-width: 768px) {
+        .gradient-form {
+        height: 110vh !important;
+        }
+        }
+        @media (min-width: 769px) {
+        .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        }
+        }
+    </style>
+  </head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "Styles/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Poppins:wght@800&display=swap" rel="stylesheet">      <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Lato:ital,wght@1,700&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <title>Labor Management System</title> 
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Labor Management System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <form action="showDetails">
+                   <button type="submit" class="btn btn-primary">Database Details</button>
+                </form>
+                <li class="nav-item">
+                  <form action="showRunQuery">
+                    <button type="submit" class="btn btn-primary">Run Query</button>
+                </form>
+                </li>
+              </ul>
+            </div>
+
+            </nav>
+            <div class = "Body-Text">
+                <h1 style="font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;"> Labor Management System </h1>
+                <img src = "https://freepngimg.com/thumb/symbol/85168-graphic-industry-labor-businessperson-design-brand.png" style = "height : 60%; width: 40%; border-radius: 50%; margin: 3% 0% 3% 0;" alt = "Image of Burger">
+                <h4 style="color: rgb(18, 162, 23);"> Using Python-Django and PostgreSQL </h4>
+                <br/>
+
+                <marquee behavior="scroll" direction="left">
+                  <align="bottom">
+                  <h4 style="color: #F52887;">
+                    !! Without Labor Nothing Prospers !!
+                  </style>
+                  </h4>
+                  </align>
+                  </marquee>
+            </div>
+
+            <div class = "Login-Box">
+                <section class="h-100 gradient-form" style="background-color: #282846;">
+                    <div class="container py-5 h-100">
+                      <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-xl-10">
+                          <div class="card rounded-3 text-black">
+                            <div class="row g-0">
+                              <div class="col-lg-6">
+                                <div class="card-body p-md-5 mx-md-4">
+                  
+                                  <div class="text-center">
+                                    <img src="https://thumbs.dreamstime.com/b/lms-letter-logo-design-black-background-lms-creative-initials-letter-logo-concept-lms-letter-design-lms-letter-logo-design-243270956.jpg" style="width: 50%; padding-right: 10%;">
+                                    <h4 class="mt-1 mb-5 pb-1">Labor Management System</h4>
+                                  </div>
+                  
+                                  <form>
+                                    <h6>Please login to your account</h6>
+                  
+                                    <div class="form-outline mb-4">
+                                      <input type="email" id="form2Example11" class="form-control"
+                                        placeholder="Enter Your Email address" />
+                                      <label class="form-label" for="form2Example11">Email Address</label>
+                                    </div>
+                  
+                                    <div class="form-outline mb-4">
+                                      <input type="password" id="form2Example22" class="form-control" placeholder="Enter Your Password" />
+                                      <label class="form-label" for="form2Example22">Password</label>
+                                    </div>
+                  
+                                    <div class="text-center pt-1 mb-5 pb-1">
+                                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
+                                        in</button>
+                                      </div>
+                  
+                                    <div class="d-flex align-items-center justify-content-center pb-4">
+                                      <p class="mb-0 me-2">Don't have an account? |</p>
+                                      <a href = "SignUp.html"><button type="button" class ="btn btn-primary btn-block">Create new</button></a>
+                                    </div>
+                  
+                                  </form>
+                  
+                                </div>
+                              </div>
+                              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                  <h4 class="mb-4">We are more than just a Management System</h4>
+                                  <p class="small mb-0">We are system which provides easy to use interface for Laborers, Supervisors and Administrators etc.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            </div>
+
+
+    </body>
+</html>
