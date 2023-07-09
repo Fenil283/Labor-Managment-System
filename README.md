@@ -1,8 +1,6 @@
 # Labor-Managment-System
 
-########### Author ############# Group6-S10-T10
-
-Vansh Parikh (202001011),
+########### Author ############# 
 
 Fenil Dalwala (202001130)
 
